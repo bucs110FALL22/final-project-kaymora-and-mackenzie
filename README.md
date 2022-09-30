@@ -9,14 +9,17 @@
 
 << [link to demo presentation slides](#) >>
 
-### Team: << team name >>
+### Team: << team name >> Mackenzie and Kaymora
 #### << Team Members >>
+Mackenzie Goodluck
+Kaymora Roberts
 
 ***
 
 ## Project Description
 
 << Give an overview of your project >>
+Our website, "Dine Before You Try", will allow users to get a feel of the restaurant before they go. Users can fill out their interests, where they can then get recommendations on different restaurants and cafes. They can also search by location, so no matter if the user is in Paris, Greece, or Jamaica they will be able to dine to their preferences. Users can also create an avatar that can visit the restaurants for them before they decide to go. 
 
 ***    
 
@@ -28,6 +31,7 @@
     
 - **Final GUI**
   - << You should also have a screenshot of each screen for your final GUI >>
+  
 
 ***        
 
