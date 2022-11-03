@@ -27,6 +27,7 @@ Our website, "Dine Before You Try", will allow users to get a feel of the restau
 
 - **Initial Concept**
   - << A wireframe or drawing of the user interface concept along with a short description of the interface. You should have one for each screen in your program. For example, if your program has a start screen, game screen, and game over screen, you should include a wireframe / screenshot / drawing of each one and a short description of the components. >>
+- 
     
     
 - **Final GUI**
