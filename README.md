@@ -48,7 +48,8 @@ Our website, "Dine Before You Try", will allow users to get a feel of the restau
         * ![class diagram](assets/class_diagram.jpg) 
 * Classes
     * << You should have a list of each of your classes with a description. >>
-
+Reponse:
+The only library used is pygame.
 ## Project Structure and File List
 
 The Project is broken down into the following file structure:
