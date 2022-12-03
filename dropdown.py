@@ -5,13 +5,15 @@ pg.init()
 clock = pg.time.Clock()
 screen = pg.display.set_mode((640, 480))
 
-def get_font(size):
+def get_font(size): 
+    '''Allows the class initializes the object's attributes. '''
     return pg.font.Font("assets/font.ttf", size)
 
 
 class DropDown():
     def __init__(self, color_menu, color_option, x, y, w, h, font, main,
                  options):
+        '''Initializes the object's attributes'''  
         self.color_menu = color_menu
         self.color_option = color_option
         self.rect = pg.Rect(x, y, w, h)
@@ -42,6 +44,7 @@ class DropDown():
                 self.buttons.append(rect)
 
     def update(self, event_list):
+        '''Defines the functions that allow the buttons in the program to change colors when the user hovers over it'''
         mpos = pg.mouse.get_pos()
         self.menu_active = self.rect.collidepoint(mpos)
 
@@ -66,12 +69,14 @@ class DropDown():
         return -1
 
     def check_drop(self):
+        '''Defines the functions that register the users click to go to each city' '''
         if self.draw_menu:
             return True
         else:
             return False
 
     def check(self, rect, pos):
+        ''' Creates the position of the box''' 
         if pos[0] in range(rect.x, rect.x + rect.width) and pos[1] in range(rect.y, rect.y + rect.height):
             return True
         else:
@@ -88,22 +93,3 @@ list1 = DropDown([COLOR_INACTIVE, COLOR_ACTIVE],
                  pg.font.SysFont(None, 30), "Where do you live?",
                  ["New York City", "Seattle", "Atlanta"])
 
-# run = True
-# while run:
-#      clock.tick(30)
-
-#      event_list = pg.event.get()
-#      for event in event_list:
-#          if event.type == pg.QUIT:
-#            run = False
-
-#      selected_option = list1.update(event_list)
-#      if selected_option >= 0:
-#          list1.main = list1.options[selected_option[1:3]]
-
-#      screen.fill((255, 255, 255))
-#      list1.draw(screen)
-#      pg.display.flip()
-
-# pg.quit()
-# exit()

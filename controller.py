@@ -28,8 +28,7 @@ class Button():
 
   def check(self, position):
     '''Checks if the position of the mouse is in the bounds of the coordinates of the button  '''
-    ## PROF NOTE: Why aren't you using rect.pointcollide here?
-    # https://www.pygame.org/docs/ref/rect.html#pygame.Rect.collidepoint
+   
     if position [0] in range (self.rect.left, self.rect.right) and position[1] in range(self.rect.top, self.rect.bottom):
        return True
     else:
@@ -37,29 +36,13 @@ class Button():
 
   def hover(self, position): 
     '''Allows the button to change color when the user's mouse hovers above it'''
-    ## PROF NOTE: Why aren't you using rect.pointcollide here?
-    # https://www.pygame.org/docs/ref/rect.html#pygame.Rect.collidepoint
+  
     if position[0] in range(self.rect.left, self.rect.right ) and position[1] in range (self.rect.top, self.rect.bottom):
       self.text = self.font.render(self.text_input, True, self.hovering_color)
     else:
       self.text = self.font.render(self.text_input, True, self.base_color)
       
-  # button_surface = pygame.image.load("button.png")
-  # button_surface = pygame.transform.scale(button_surface, (400, 150))
-
- # button = Button(button_surface, (400,300), "Start Now :)", font = "arial", base_color = "white", hovering_color = "pink")
-
- # while True: 
- #   for event in pygame.event.get():
- #    if event.type == pygame.QUIT:
- #      pygame.quit()
- #       sys.exit()
- #    if event.type == pygame.MOUSEBUTTONDOWN:
- #     button.check(pygame.mouse.get_pos())
-
- #   screen.fill("green")
- #   button.on_screen()
- #   button.hover(pygame.mouse.get_pos())
+ 
    
 pygame.display.update()
                                                                                         

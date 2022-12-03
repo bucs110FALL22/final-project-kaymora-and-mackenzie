@@ -9,17 +9,18 @@ pygame.init()
 SCREEN = pygame.display.set_mode((1280, 720))
 pygame.display.set_caption("Dine Before you Try!")
 
-#BG = pygame.image.load('assets/background.png')
 BG = pygame.image.load('assets/background.png')
 
 
 def get_font(size):
+    '''Allows the class initializes the object's attributes. '''
     return pygame.font.Font("assets/font.ttf", size)
 
 r = open('restaurant.json', 'r')
 restaurants = json.load(r)
 
 def makeRest(loc, restNum):
+    '''Creates restaurants position on the screen'''
     if restNum == 1:
         posX = 180
     elif restNum == 2:
@@ -53,10 +54,12 @@ def makeRest(loc, restNum):
 
 class Controller():
 
-    def __init__(self):
+    def __init__(self): 
+        '''Initializes the objects attributes  '''
         self.clock = pygame.time.Clock()
 
     def start(self):
+        '''Creates the dropdown menu'''
         START_TEXT = get_font(25).render("Where do you live?", True, "White")
         START_RECT = START_TEXT.get_rect(center=(640, 80))
 
@@ -110,6 +113,7 @@ class Controller():
             pygame.display.update()
 
     def main_menu(self):
+        '''Creates the main start screen page including the start button and quit button'''
         while True:
             SCREEN.blit(BG, (0, 0))
 
@@ -154,9 +158,10 @@ class Controller():
             pygame.display.update()
 
     def restaurant(self, loc):
+        '''Defines the function that controls the location of the back button '''
 
         Restaurant_BACK = Button(image=None,
-                                pos=(640, 650),
+                                pos=(640, 640),
                                 text_input="BACK",
                                 font=get_font(35),
                                 base_color="Black",
