@@ -1,0 +1,71 @@
+{
+	"New York City": {
+		"Rest1": {
+			"name": "Peppa's Jerk Chicken",
+			"address": "71 Prospect Pl, Brooklyn, NY 11216",
+			"phoneNumber": "(718)450-3976",
+			"images": "jerk1.png",
+			"price": "18"
+		},
+		"Rest2": {
+			"name": "Africa Kine",
+			"address": "2267 Adam Clayton Powell Jr Blvd,New York,NY 10027",
+			"phoneNumber": "(212)666-9400",
+			"images": "kine1.png",
+			"price": "14"
+		},
+		"Rest3": {
+			"name": "Maialino(vicino)",
+			"address": "30 E 30th St,New York,NY 10016",
+			"phoneNumber": "(212)777-2410",
+			"images": "italy1.png",
+      		"price": "19"
+		}
+	},
+	"Seattle": {
+		"Rest1": {
+			"name": "Taste of the Caribbean",
+			"address": "1212 E Jefferson St,Seattle,WA 98122",
+			"phoneNumber": "(206)323-9112",
+			"images": "jsea1.png",
+			"price": "16"
+		},
+		"Rest2": {
+			"name": "Jebna Cafe",
+			"address": "12322-A Lake City NE,Seattle,WA 98125",
+			"phoneNumber": "(206)474-460",
+			"images": "asea1.png",
+			"price": "18"
+		},
+		"Rest3": {
+			"name": "Vendemmia",
+			"address": "1126 34th Ave,Seattle,WA 98122",
+			"phoneNumber": "(206)466-2533",
+			"images": "italysea1.png",
+      		"price": "23"
+		}
+	},
+	"Atlanta": {
+		"Rest1": {
+			"name": "Jamrock Restaurant",
+			"address": "111 M.L.K. Jr Dr SW, Atlanta, GA 30303",
+			"phoneNumber": "(404) 577-4622",
+			"images": "jamatl1.png",
+			"price": "18"
+		},
+		"Rest2": {
+			"name": "Yebo Beach Haus",
+			"address": "56 E Andrews Dr NW Unit 7, Atlanta, GA 30305",
+			"phoneNumber": "(404) 228-8024",
+			"images": "aatl1.png",
+			"price": "21"
+		},
+		"Rest3": {
+			"name": "La Grotta Ristorante",
+			"address": "2637 Peachtree Rd NE, Atlanta, GA 30305",
+			"phoneNumber": "(404) 231-1368",
+			"images": "atli1.png",
+      		"price": "32"
+		}
+	}
+}
